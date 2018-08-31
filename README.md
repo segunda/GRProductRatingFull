@@ -13,3 +13,8 @@
 
 You can see a Demo [here](http://77.163.209.113/GRProductRating/ "Product Rating").
 
+Or watch a Walktrough:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=BaEWaOOe7LA
+" target="_blank"><img src="http://img.youtube.com/vi/BaEWaOOe7LA/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
