@@ -7,5 +7,6 @@
      | -[O]--[O]- |       I used Foundation 6.5.0-rc.2 
      |    ___,    |       
      |    ...     |
-      \__________/        Mark Volmer - 31-08-2018```
-
+      \__________/        Mark Volmer - 31-08-2018
+```
+[Deployment files](GRProductRating/dist20180831) use this folder to run a local, minified version.
