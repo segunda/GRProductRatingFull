@@ -1,0 +1,406 @@
+@charset 'utf-8';
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+//
+@include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+// @include foundation-float-classes;
+@include foundation-flex-classes;
+
+// @include foundation-prototype-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+// vendor styles
+@import "vendor/aos";
+@import "vendor/slick-carousel";
+@import "vendor/index-menu";
+
+// mixins
+@import 'mixins/container-border';
+@import 'mixins/flex';
+@import 'mixins/avatar';
+@import 'mixins/helpers';
+@import 'mixins/psuedo';
+@import 'mixins/push-center';
+@import 'mixins/sidelines';
+@import 'mixins/zindex';
+
+// global styles
+@import 'global/app-dashboard';
+@import 'global/layout';
+
+// custom components
+@import 'components/navigation/main-nav';
+
+@import 'components/footer';
+
+@include mui-series {
+	.icon-star{
+	@include mui-queue(0.2s, 0s, fade, hinge);
+	}
+	#bar-five {
+	@include mui-queue(0.2s, 0s, hinge);
+	}
+	#bar-four {
+	@include mui-queue(0.5s, 0s, hinge);
+	}
+	#bar-three {
+	@include mui-queue(0.5s, 0s, fade, hinge);
+	}
+	#bar-two {
+	@include mui-queue(0.5s, 0s, fade, hinge);
+	}
+	#bar-one {
+	@include mui-queue(0.5s, 0s, fade, hinge);
+	}
+	
+}
+
+/*clean this up*/
+
+
+
+
+.ratingcontainer {
+  font-family: 'Roboto', Helvetica;
+  color: #737373;
+  font-weight: 300;
+  background-color: #EFEFEF;
+  padding: 4px;
+ 
+}
+
+.inner {
+  padding: 1em;
+  background-color: white;
+  overflow: hidden;
+ 
+  border-radius: 4px; 
+}
+
+.rating {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.rating-num {
+  color: #333333;
+  font-size: 72px;
+  font-weight: 100;
+  line-height: 1em; 
+}
+
+.rating-stars {
+  font-size: 20px;
+  color: #E3E3E3;
+  margin-bottom: .5em;
+}
+
+.rating-stars .active {
+  color: #737373;
+}
+
+.rating-users {
+  font-size: 14px;
+}
+
+$color-one: #FF8B5A;
+$color-two: #FFB234;
+$color-three: #FFD834;
+$color-four: #ADD633;
+$color-five: #9FC05A;
+
+.histo {
+  float: left;
+  width: 50%;
+  font-size: 13px;
+}
+
+.histo-star {
+  float: left;
+  padding: 3px;
+
+}
+
+.histo-rate {
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+.bar-block {
+  margin-left: 5px;
+  color: black;
+  display: block;
+  float: left;
+  width: 75%;
+  position: relative;
+}
+
+.bar {
+  padding: 4px;
+  display: block;
+}
+
+#bar-five {
+  /*width: 0;*/
+  background-color: $color-five;
+}
+.colorfive{
+	stroke:$color-five; 
+}
+#bar-four {
+  width: 40%;
+  background-color: $color-four;
+}
+
+#bar-three {
+  width: 30%;
+  background-color: $color-three;
+}
+
+#bar-two {
+  width: 15%;
+  background-color: $color-two;
+}
+
+#bar-one {
+  width: 1%;
+  background-color: $color-one;
+}
+
+
+
+$rating-block-margin-bottom: 2rem; //spacing below each rating line
+$rating-block-star-color: $secondary-color;
+.rating-block-star-color-one {stroke:$color-one;}
+.rating-block-star-color-two {stroke:$color-two;}
+.rating-block-star-color-three {stroke:$color-three;}
+.rating-block-star-color-four {stroke:$color-four;fill: $color-four;}
+.rating-block-star-color-five {
+	stroke: $color-five;
+	fill: $color-five;
+}
+
+
+.rating-block {
+  padding: 2px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .ratings-type {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .rating-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: $rating-block-margin-bottom;
+  }
+
+  .rating-block-rating {
+    display: flex;
+  }
+
+  .star {
+    cursor: pointer;
+   // stroke: $rating-block-star-color;
+  }
+
+  .rating-block-rating .star.selected polygon {
+    fill: $rating-block-star-color;
+   
+  }
+
+  .rating-block-rating.is-voted .star polygon {
+    fill: $rating-block-star-color;
+   
+  }
+
+  .rating-block-rating.is-voted .star.selected ~ .star polygon {
+    fill: transparent;
+  }
+}
+
+.smallProfilePic{
+	width:24px;
+	height:24px;
+	padding:1px;
+}
+
+
+// Hero stuff
+
+$hero-full-screen-bg: url('https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center center no-repeat;
+$hero-full-screen-bg-size: cover;
+$hero-full-screen-text-color: $white;
+
+.hero-full-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: $hero-full-screen-bg;
+  background-size: $hero-full-screen-bg-size;
+
+  .middle-content-section {
+    text-align: center;
+    color: $hero-full-screen-text-color;
+    width: 90%;
+  }
+
+  .top-content-section {
+    width: 100%;
+  }
+
+    #main-content-section {
+    width: 97%;
+    padding: 1rem;
+  }
+
+  .bottom-content-section {
+    padding: 1rem;
+	width: 100%;
+
+    svg {
+      height: rem-calc(60);
+      width: rem-calc(60);
+      fill: $hero-full-screen-text-color;
+      
+    }
+  }
+
+  // optional demo styles
+  .top-bar {
+    background: transparent;
+
+    .menu {
+      background: transparent;
+    }
+
+    .menu-text {
+      color: $hero-full-screen-text-color;
+    }
+
+    .menu li {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu a {
+      color: $hero-full-screen-text-color;
+      font-weight: bold;
+    }
+  }
+}
+
+// Product Card
+
+.product-card {
+  background-color: $white;
+  border: 1px solid $light-gray;
+  padding: 1rem;
+  margin-bottom: 1.5rem;  
+}
+
+.product-card-thumbnail {
+  //display: block;
+
+  //position: relative;
+}
+
+.product-card-title {
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.product-card-desc {
+  color: $dark-gray;
+  //display: block;
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.85rem;
+}
+
+.product-card-price {
+  color: darken($dark-gray,30%);
+  //display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.product-card-sale {
+  color: $medium-gray;
+  //display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through;
+}
+
+.product-card-colors {
+  //display: block;
+  margin-top: 0.8rem;
+}
+
+.product-card-color-option {
+  //display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
