@@ -10,3 +10,6 @@
       \__________/        Mark Volmer - 31-08-2018
 ```
 [Deployment files](GRProductRating/dist20180831) use this folder to run a local, minified version.
+
+You can see a Demo [here](http://77.163.209.113/GRProductRating/ "Product Rating").
+
